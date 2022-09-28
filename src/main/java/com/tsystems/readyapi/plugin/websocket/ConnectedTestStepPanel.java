@@ -53,7 +53,7 @@ public abstract class ConnectedTestStepPanel<T extends ConnectedTestStep> extend
 
         form.appendHeading("Connection to Websocket Server");
         form.appendComboBox("Connection", connectionsModel, "Choose one of pre-configured connections");
-        configureConnectionButton = form.appendButtonWithoutLabel("Configure...", new ActionListener() {
+        configureConnectionButton = form.appendButtonWithoutLabel("Configure...", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Connection connection = getModelItem().getConnection();
