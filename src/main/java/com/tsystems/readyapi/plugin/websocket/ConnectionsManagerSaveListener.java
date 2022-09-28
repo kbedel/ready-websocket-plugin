@@ -40,6 +40,11 @@ public class ConnectionsManagerSaveListener implements ProjectListener, Workspac
     }
 
     @Override
+    public void environmentsReordered() {
+        //
+    }
+
+    @Override
     public void environmentSwitched(Environment environment) {
         //
     }
